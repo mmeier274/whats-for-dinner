@@ -6,7 +6,7 @@ var mains = [
   "Korean-Kansas City BBQ Pork Skewers",
   "Pterodactyl Volcano Heat Wings",
   "Mom-Style Cheesy Potato Bacon Soup",
-  "Seven-Layered Italian Casserole"
+  "Seven-Layered Italian Casserole",
 ];
 var sides = [
   "Rosemary Fry Kebobs",
@@ -16,7 +16,7 @@ var sides = [
   "Deep-Fried Pickles",
   "Sweet-Street Fire Roasted Corn",
   "Lemon-Parmesan Roasted Broccoli",
-  "Tropical-Paradiso Fruit-Salad"
+  "Tropical-Paradiso Fruit-Salad",
 ];
 var dessert = [
   "Farm-Fresh Jumbo Carrot-Cake",
@@ -26,5 +26,31 @@ var dessert = [
   "Deep-Fried Apple-Menagerie Hand-Pie",
   "Fresh-Baked Chocolate-Chip Alamode",
   "Peanut-Butter-Jelly Cannoli",
-  "Chocolate CheeseCake Center Brownies"
+  "Chocolate CheeseCake Center Brownies",
 ];
+var cookBtn = document.querySelector('.homemade-button');
+var siBtn = document.querySelector('#si');
+var maiBtn = document.querySelector('#mai');
+var daiBtn = document.querySelector('#dai');
+
+var bneAppTite = document.querySelector('.meal-time');
+cookBtn.addEventListener('click', carefulItsHot);
+
+function carefulItsHot() {
+  event.preventDefault()
+  if (document.getElementById('si').checked) {
+    bneAppTite.innerText = sides[getRandomIndex(sides)];
+    bneAppTite.classList.add('red');
+  } else if (document.getElementById('mai').checked) {
+    bneAppTite.innerText = mains[getRandomIndex(mains)];
+    bneAppTite.classList.add('red');
+  } else if (document.getElementById('dai').checked) {
+    bneAppTite.innerText = dessert[getRandomIndex(dessert)];
+    bneAppTite.classList.add('red');
+  };
+
+};
+
+function getRandomIndex(array) {
+    return Math.floor(Math.random() * array.length);
+};
