@@ -1,4 +1,9 @@
-.background {
+* {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+body {
   background-image: url("./assets/burger-friends.jpg");
   height: 500px;
   background-position: center;
@@ -7,7 +12,6 @@
 }
 
 .header {
-  font-family: 'Roboto', sans-serif;
   background-color: #0fb9b1;
   height: 60px;
   display: flex;
@@ -16,7 +20,6 @@
 }
 
 .course-selection {
-  font-family: 'Roboto', sans-serif;
   background-color: rgba(225, 225, 225, .9);
   margin-top: 50px;
   width: 300px;
@@ -62,7 +65,23 @@ button {
   width: 200px;
   font-size: 20px;
 }
-/* font-family: 'Roboto', sans-serif;
+
+.meal-time {
+  font-size: 58px;
+  background-color: silver;
+}
+  .red{
+    font-family: monospace;
+    font-size: 58px;
+    background-color: #f6d6d1;
+  }
+
+  .blue{
+    font-family: monospace;
+    font-size: 58px;
+    background-color: #fec100;
+}
+/*
 
 COLORS
 teal - #0fb9b1;
