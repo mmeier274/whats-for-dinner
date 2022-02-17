@@ -44,8 +44,7 @@ body {
 }
 
 .boil-point {
-  width: 40%;
-  margin-left: 50px;
+  width: 50%;
 }
 
 .menu {
@@ -67,20 +66,14 @@ button {
 }
 
 .meal-time {
-  font-size: 58px;
-  background-color: silver;
-}
-  .red{
-    font-family: monospace;
-    font-size: 58px;
-    background-color: #f6d6d1;
-  }
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+};
 
-  .blue{
-    font-family: monospace;
-    font-size: 58px;
-    background-color: #fec100;
-}
+.hidden {
+  display: none;
+};
 /*
 
 COLORS

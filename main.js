@@ -11,7 +11,7 @@ var mains = [
 var sides = [
   "Rosemary Fry Kebobs",
   "Cinnamon-Sugar Maple-Butter Sweet Potato",
-  "Cayanne-Dusted Buffalo Chips"
+  "Cayanne-Dusted Buffalo Chips",
   "Brown-Sugar Bacon Onion Baked Beans",
   "Deep-Fried Pickles",
   "Sweet-Street Fire Roasted Corn",
@@ -32,21 +32,20 @@ var cookBtn = document.querySelector('.homemade-button');
 var siBtn = document.querySelector('#si');
 var maiBtn = document.querySelector('#mai');
 var daiBtn = document.querySelector('#dai');
+var potImg = document.querySelector('.boil-point')
 
 var bneAppTite = document.querySelector('.meal-time');
 cookBtn.addEventListener('click', carefulItsHot);
 
+
 function carefulItsHot() {
-  event.preventDefault()
+  potImg.classList.add("hidden")
   if (document.getElementById('si').checked) {
     bneAppTite.innerText = sides[getRandomIndex(sides)];
-    bneAppTite.classList.add('red');
   } else if (document.getElementById('mai').checked) {
     bneAppTite.innerText = mains[getRandomIndex(mains)];
-    bneAppTite.classList.add('red');
   } else if (document.getElementById('dai').checked) {
     bneAppTite.innerText = dessert[getRandomIndex(dessert)];
-    bneAppTite.classList.add('red');
   };
 
 };
