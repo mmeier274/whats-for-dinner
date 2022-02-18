@@ -47,7 +47,6 @@ function carefulItsHot() {
   } else if (document.getElementById('dai').checked) {
     bneAppTite.innerText = dessert[getRandomIndex(dessert)];
   };
-
 };
 
 function getRandomIndex(array) {
