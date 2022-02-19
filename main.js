@@ -9,7 +9,7 @@ var mains = [
   "Seven-Layered Italian Casserole",
 ];
 var sides = [
-  "Rosemary Fry Kebobs",
+  "Rosemary Cheese-Fry Kebobs",
   "Cinnamon-Sugar Maple-Butter Sweet Potato",
   "Cayanne-Dusted Buffalo Chips",
   "Brown-Sugar Bacon Onion Baked Beans",
